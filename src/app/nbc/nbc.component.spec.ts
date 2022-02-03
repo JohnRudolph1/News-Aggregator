@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MsnbcComponent } from './msnbc.component';
+import { NbcComponent } from './nbc.component';
 
 describe('MsnbcComponent', () => {
-  let component: MsnbcComponent;
-  let fixture: ComponentFixture<MsnbcComponent>;
+  let component: NbcComponent;
+  let fixture: ComponentFixture<NbcComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MsnbcComponent ]
+      declarations: [ NbcComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MsnbcComponent);
+    fixture = TestBed.createComponent(NbcComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

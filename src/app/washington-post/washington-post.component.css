@@ -1,11 +1,8 @@
 .header {
     padding: 80px;
     text-align: center;
-    background: url("https://media.info/i/tb/1456/1542022949/28342308.jpg") no-repeat center/cover;
-    
-  }
-  button{
-    text-align: center;
+    background: url("https://tpmsite-f8c0.kxcdn.com/wp-content/uploads/2019/02/Screen-Shot-2019-02-04-at-8.35.59-AM.png") no-repeat center/cover;
+
   }
   body {
     box-sizing: border-box;
@@ -13,8 +10,8 @@
     
   }
 h4 {
-    color: rgb(0, 119, 255);
-    font-family: Arial, Helvetica, sans-serif;
+    color: #3061ff;
+    font-family: 'cursive';
     font-size: 12px;
     font-weight: 400;
     height: 12px;

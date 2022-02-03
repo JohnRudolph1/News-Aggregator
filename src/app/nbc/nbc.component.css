@@ -1,11 +1,8 @@
 .header {
     padding: 80px;
     text-align: center;
-    background: url("https://media.info/i/tb/1456/1542022949/28342308.jpg") no-repeat center/cover;
+    background: url("https://www.pngitem.com/pimgs/m/129-1297913_manifest-nbc-logo-hd-png-download.png")no-repeat center/cover;
     
-  }
-  button{
-    text-align: center;
   }
   body {
     box-sizing: border-box;
@@ -13,7 +10,7 @@
     
   }
 h4 {
-    color: rgb(0, 119, 255);
+    color: #3061ff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 400;

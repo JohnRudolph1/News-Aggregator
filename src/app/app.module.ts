@@ -8,20 +8,26 @@ import { FetchData } from './fetch.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FoxComponent } from './fox/fox.component';
-import { MsnbcComponent } from './msnbc/msnbc.component';
+import { NbcComponent } from './nbc/nbc.component';
 import { GuardianComponent } from './guardian/guardian.component';
 import { HomeComponent } from './home/home.component';
 import { AbcComponent } from './abc/abc.component';
+import { CnnComponent } from './cnn/cnn.component';
+import { NytComponent } from './nyt/nyt.component';
+import { WashingtonPostComponent } from './washington-post/washington-post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FoxComponent,
-    MsnbcComponent,
+    NbcComponent,
     GuardianComponent,
     HomeComponent,
     AbcComponent,
+    CnnComponent,
+    NytComponent,
+    WashingtonPostComponent,
   ],
   imports: [
     BrowserModule,

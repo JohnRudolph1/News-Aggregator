@@ -16,11 +16,20 @@ export class FetchData {
   fetchAbc(): Observable<Object> {
     return this.http.get('http://localhost:3000/abc');
   }
-  fetchMsnbc(): Observable<Object> {
-    return this.http.get('http://localhost:3000/msnbc');
+  fetchNbc(): Observable<Object> {
+    return this.http.get('http://localhost:3000/nbc');
   }
   fetchGuardian(): Observable<Object> {
     return this.http.get('http://localhost:3000/guardian');
+  }
+  fetchCnn(): Observable<Object> {
+    return this.http.get('http://localhost:3000/cnn');
+  }
+  fetchNyt(): Observable<Object> {
+    return this.http.get('http://localhost:3000/nyt');
+  }
+  fetchWashingtonPost(): Observable<Object> {
+    return this.http.get('http://localhost:3000/washingtonPost');
   }
 
 }
