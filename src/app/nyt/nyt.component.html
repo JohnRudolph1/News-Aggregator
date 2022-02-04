@@ -15,7 +15,11 @@
         <br>
         <br>
         <br>
-    <button (click)="fetchNyt()">Show All Articles
+        <br>
+        <br>
+        <br>
+        <br>
+    <button (click)="fetchNyt()">View Articles
     </button>
   </div>
 <body>
@@ -32,6 +36,6 @@
               <br>
               <h4>The New York Times</h4>
             <h2>{{event.title}}</h2>          
-            <button><a href="{{event.url}}">Article Link</a></button>
+            <a class="btn btn-primary" href="https://www.nytimes.com{{event.url}}" role="button">Article Link</a>
           </div>
       </div>

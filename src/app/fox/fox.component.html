@@ -6,17 +6,20 @@
 
 
 <div class="header">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <button (click)="fetchFox()">Show All Articles
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <button (click)="fetchFox()">View Articles
     </button>
 </div>
 
@@ -36,6 +39,6 @@
                   <br>
                   <h4>FOX News</h4>
                 <h2>{{event.title}}</h2>          
-                <button><a href="{{event.url}}">Article Link</a></button>
+                <a class="btn btn-primary" href="{{event.url}}" role="button">Article Link</a>
               </div>
           </div>

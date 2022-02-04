@@ -10,6 +10,7 @@ import { NytComponent } from './nyt/nyt.component';
 import { WashingtonPostComponent } from './washington-post/washington-post.component';
 const routes: Routes = [
   
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'fox', component: FoxComponent },
   { path: 'abc', component: AbcComponent },

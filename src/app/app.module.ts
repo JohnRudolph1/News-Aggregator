@@ -15,6 +15,7 @@ import { AbcComponent } from './abc/abc.component';
 import { CnnComponent } from './cnn/cnn.component';
 import { NytComponent } from './nyt/nyt.component';
 import { WashingtonPostComponent } from './washington-post/washington-post.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,8 @@ import { WashingtonPostComponent } from './washington-post/washington-post.compo
     CnnComponent,
     NytComponent,
     WashingtonPostComponent,
+    FooterComponent,
+    
   ],
   imports: [
     BrowserModule,

@@ -8,21 +8,24 @@
 
 <div class="header">
   <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-  <button (click)="fetchCnn()">Show All Articles
+  <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <button (click)="fetchCnn()">View Articles
   </button>
 </div>
 
 <body>
- 
 
   <div *ngFor="let event of events$ | async">
 
@@ -35,6 +38,6 @@
               <br>
               <h4>CNN News</h4>
             <h2>{{event.title}}</h2>          
-            <button><a href="{{event.url}}">Article Link</a></button>
+            <a class="btn btn-primary" href="{{event.url}}" role="button">Article Link</a>
           </div>
       </div>
