@@ -1,0 +1,32 @@
+.header {
+  padding: 80px;
+  text-align: center;
+  background: url("https://media4.s-nbcnews.com/i/newscms/2019_01/2705191/nbc-social-default_b6fa4fef0d31ca7e8bc7ff6d117ca9f4.png")
+    no-repeat center/cover;
+}
+body {
+  box-sizing: border-box;
+}
+h4 {
+  color: #3061ff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  height: 12px;
+  letter-spacing: unset;
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  transition: opacity 0.25s ease-in-out;
+}
+h2 {
+  color: #2a2a2a;
+  font-family: FoundersGroteskCond, Arial Narrow, Arial;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0 0 0.5rem;
+  transition: opacity 0.25s ease-in-out;
+}
+.disclaimer {
+  text-align: center;
+}
