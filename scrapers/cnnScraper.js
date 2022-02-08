@@ -19,6 +19,9 @@ const getCnn = async (url) => {
           title: item.querySelector(
             ".itemtitle"
           ).innerText,
+          desc: item.querySelector(
+            ".itemcontent"
+          ).innerText,
           
           url: item.querySelector("a").getAttribute("href"),
           // img: item.querySelector("img").getAttribute("src"),

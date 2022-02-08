@@ -19,6 +19,9 @@ const getWashingtonPost = async (url) => {
           title: item.querySelector(
             ".font-md"
           ).innerText,
+          desc: item.querySelector(
+            ".pt-xs"
+          ).innerText,
           
           url: item.querySelector("a").getAttribute("href"),
           // img: item.querySelector("img").getAttribute("src"),

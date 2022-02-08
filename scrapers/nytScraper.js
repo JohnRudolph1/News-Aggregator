@@ -19,6 +19,9 @@ const getNyt = async (url) => {
           title: item.querySelector(
             ".css-1j9dxys"
           ).innerText,
+          desc: item.querySelector(
+            ".css-1echdzn"
+          ).innerText,
           
           url: item.querySelector("a").getAttribute("href"),
           // img: item.querySelector("img").getAttribute("src"),

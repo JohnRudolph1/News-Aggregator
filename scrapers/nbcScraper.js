@@ -20,6 +20,10 @@ const getNbc = async (url) => {
               ".wide-tease-item__headline"
             ).innerText,
             
+            desc: item.querySelector(
+              ".wide-tease-item__description"
+            ).innerText,
+            
             url: item.querySelector("a").getAttribute("href"),
             // img: item.querySelector("img").getAttribute("src"),
           });

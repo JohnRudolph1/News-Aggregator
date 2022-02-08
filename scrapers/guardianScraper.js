@@ -21,6 +21,8 @@ const getGuardian = async (url) => {
             ".fc-item__title"
           ).innerText,
           
+          
+          
           url: item.querySelector("a").getAttribute("href"),
           // img: item.querySelector("img").getAttribute("src"),
         });

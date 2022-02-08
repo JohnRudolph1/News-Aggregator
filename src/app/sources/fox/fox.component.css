@@ -32,3 +32,10 @@ h2 {
 .disclaimer {
   text-align: center;
 }
+h3{
+  color: rgb(63, 63, 63);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.375;
+    padding: 10px 0;
+}

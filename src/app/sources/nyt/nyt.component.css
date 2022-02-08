@@ -29,3 +29,10 @@ h2 {
     margin: 0 0 0.5rem;
     transition: opacity .25s ease-in-out;
 }
+h3{
+  color: rgb(63, 63, 63);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.375;
+    padding: 10px 0;
+}

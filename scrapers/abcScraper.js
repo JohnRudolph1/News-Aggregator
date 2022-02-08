@@ -19,7 +19,8 @@ const getAbc = async (url) => {
           title: item.querySelector(
             ".AnchorLink"
           ).innerText,
-          
+          desc: item.querySelector(".ContentRoll__Desc")
+          .innerText,
           url: item.querySelector("a").getAttribute("href"),
           // img: item.querySelector("img").getAttribute("src"),
         });

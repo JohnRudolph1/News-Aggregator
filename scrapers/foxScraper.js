@@ -12,13 +12,15 @@ const getFox = async (url) => {
   await page.goto(url);
    {
     const pageResults = await page.evaluate(() => {
-      let items = document.querySelectorAll(".article");
+      let items = document.querySelectorAll(".info-header");
       const results = [];
       items.forEach((item) => {
         results.push({
           title: item.querySelector(
             ".title"
           ).innerText,
+          
+         
           
           url: item.querySelector("a").getAttribute("href"),
           // img: item.querySelector("img").getAttribute("src"),
