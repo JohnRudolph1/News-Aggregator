@@ -9,10 +9,10 @@ import { FetchData } from '../../fetch.component';
 })
 export class WashingtonPostComponent  {
 
-  events$
-  constructor(private eventData: FetchData){}
+  events$: any
+  constructor(private eventData: FetchData){
 
-  fetchWashingtonPost() {
+  
     this.events$ = this.eventData.fetchWashingtonPost();
   }
 }

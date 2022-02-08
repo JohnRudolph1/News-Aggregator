@@ -8,9 +8,9 @@ import { FetchData } from '../../fetch.component';
 })
 export class FoxComponent {
   events$: any
-  constructor(private eventData: FetchData){}
+  constructor(private eventData: FetchData){
 
-  fetchFox() {
+  
     this.events$ = this.eventData.fetchFox();
   }
 }

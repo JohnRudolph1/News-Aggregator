@@ -19,6 +19,9 @@ const getFox = async (url) => {
           title: item.querySelector(
             ".title"
           ).innerText,
+          desc: item.querySelector(
+            "a"
+          ).innerText,
           
          
           

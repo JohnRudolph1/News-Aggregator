@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 
 import { FetchData } from './fetch.component';
@@ -17,6 +17,11 @@ import { NytComponent } from './sources/nyt/nyt.component';
 import { WashingtonPostComponent } from './sources/washington-post/washington-post.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
 
 
 @NgModule({
@@ -33,13 +38,16 @@ import { AboutComponent } from './components/about/about.component';
     WashingtonPostComponent,
     FooterComponent,
     AboutComponent,
-    
-    
+      
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    MatProgressSpinnerModule,
+    BrowserAnimationsModule,
+    
+   
     
   ],
   providers: [FetchData],

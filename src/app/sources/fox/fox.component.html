@@ -19,8 +19,6 @@
   <br>
   <br>
   <br>
-    <button class="btn btn-primary" (click)="fetchFox()">View Articles
-    </button>
 </div>
 
 
@@ -37,8 +35,10 @@
             </div>
               <div class="w3-twothird w3-container">
                   <br>
-                  <h4>FOX News</h4>
+                  <h4><a href ="https://www.foxnews.com/">Fox News</a> </h4>
+
                 <h2>{{event.title}}</h2>          
+                <h3>{{event.desc}}</h3>          
                 <a class="btn btn-primary" href="{{event.url}}" role="button">Article Link</a>
                 <script>function fbs_click() { u = location.href; t = document.title; window.open('http://www.facebook.com/sharer.php?u=' + encodeURIComponent(u) + '&t=' + encodeURIComponent(t), 'sharer', 'toolbar=0,status=0,width=626,height=436'); return false; }</script>
                 <style>

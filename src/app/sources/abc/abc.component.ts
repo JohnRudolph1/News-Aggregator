@@ -1,18 +1,22 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FetchData } from '../../fetch.component';
+
+
 
 @Component({
   selector: 'app-abc',
   templateUrl: './abc.component.html',
   styleUrls: ['./abc.component.css']
 })
-export class AbcComponent {
+export class AbcComponent{
 
-  events$;
-    constructor(private newsData: FetchData){}
+  events$: any
+  constructor(private eventData: FetchData){
+
   
-    fetchAbc() {
-      this.events$ = this.newsData.fetchAbc();
-    }
+    this.events$ = this.eventData.fetchAbc();
+  }
 }
+

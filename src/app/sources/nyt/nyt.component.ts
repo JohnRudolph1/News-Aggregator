@@ -8,10 +8,10 @@ import { FetchData } from '../../fetch.component';
 })
 export class NytComponent  {
 
-  events$
-  constructor(private eventData: FetchData){}
+  events$: any
+  constructor(private eventData: FetchData){
 
-  fetchNyt() {
+  
     this.events$ = this.eventData.fetchNyt();
   }
 }

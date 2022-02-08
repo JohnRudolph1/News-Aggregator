@@ -27,10 +27,10 @@ import { FetchData } from '../../fetch.component';
 })
 export class GuardianComponent {
 
-  events$;
-    constructor(private newsData: FetchData){}
+  events$: any
+  constructor(private eventData: FetchData){
+
   
-    fetchGuardian() {
-      this.events$ = this.newsData.fetchGuardian();
-    }
+    this.events$ = this.eventData.fetchGuardian();
+  }
 }

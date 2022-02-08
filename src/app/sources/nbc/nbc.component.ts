@@ -8,11 +8,11 @@ import { FetchData } from '../../fetch.component';
 })
 export class NbcComponent  {
 
-  events$
-    constructor(private eventData: FetchData){}
+  events$: any
+  constructor(private eventData: FetchData){
+
   
-    fetchNbc() {
-      this.events$ = this.eventData.fetchNbc();
-    }
+    this.events$ = this.eventData.fetchNbc();
+  }
 }
 

@@ -9,6 +9,9 @@ import { CnnComponent } from './sources/cnn/cnn.component';
 import { NytComponent } from './sources/nyt/nyt.component';
 import { WashingtonPostComponent } from './sources/washington-post/washington-post.component';
 import { AboutComponent } from './components/about/about.component';
+
+
+
 const routes: Routes = [
   
   { path: '', component: HomeComponent },
@@ -21,6 +24,7 @@ const routes: Routes = [
   { path: 'guardian', component: GuardianComponent },
   { path: 'washingtonPost', component: WashingtonPostComponent },
   { path: 'about', component: AboutComponent },
+  
 ];
 
 @NgModule({
