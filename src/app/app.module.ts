@@ -19,7 +19,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatButtonModule } from '@angular/material/button';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { MatCardModule } from '@angular/material/card';
+import { AuthenticatorComponent } from './tools/authenticator/authenticator.component';
+import { FirebaseTSApp } from 'firebasets/firebasetsApp/firebaseTSApp';
+import { environment } from 'src/environments/environment';
+import { EmailVerificationComponent } from './tools/email-verification/email-verification.component';
 
 
 
@@ -38,6 +44,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     WashingtonPostComponent,
     FooterComponent,
     AboutComponent,
+    AuthenticatorComponent,
+    EmailVerificationComponent,
+    
       
   ],
   imports: [
@@ -45,7 +54,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     HttpClientModule,
     MatProgressSpinnerModule,
+    MatButtonModule,
+    MatBottomSheetModule,
+    MatCardModule,
     BrowserAnimationsModule,
+    
+    
     
    
     
@@ -53,4 +67,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   providers: [FetchData],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+  constructor() {
+    FirebaseTSApp.init(environment.firebase);
+  }
+}

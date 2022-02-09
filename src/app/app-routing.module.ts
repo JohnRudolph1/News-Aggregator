@@ -9,7 +9,7 @@ import { CnnComponent } from './sources/cnn/cnn.component';
 import { NytComponent } from './sources/nyt/nyt.component';
 import { WashingtonPostComponent } from './sources/washington-post/washington-post.component';
 import { AboutComponent } from './components/about/about.component';
-
+import { EmailVerificationComponent } from './tools/email-verification/email-verification.component';
 
 
 const routes: Routes = [
@@ -24,6 +24,7 @@ const routes: Routes = [
   { path: 'guardian', component: GuardianComponent },
   { path: 'washingtonPost', component: WashingtonPostComponent },
   { path: 'about', component: AboutComponent },
+  // {path: "emailVerification", component: EmailVerificationComponent},
   
 ];
 

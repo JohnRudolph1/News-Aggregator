@@ -30,3 +30,7 @@ color: white;
 .topnav-right {
 float: right;
 }
+button {
+  margin-top: .5%;
+  margin-left: 2%;
+}
