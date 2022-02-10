@@ -35,7 +35,7 @@ app.get("/guardian", async (req, res) => {
   res.json(results);
 });
 app.get("/fox", async (req, res) => {
-  let results = await getFox("https://www.foxnews.com/politics");
+  let results = await getFox("http://feeds.foxnews.com/foxnews/politics");
   console.log(results);
   res.json(results);
 });

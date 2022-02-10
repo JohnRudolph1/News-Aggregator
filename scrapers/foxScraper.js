@@ -12,15 +12,15 @@ const getFox = async (url) => {
   await page.goto(url);
    {
     const pageResults = await page.evaluate(() => {
-      let items = document.querySelectorAll(".info-header");
+      let items = document.querySelectorAll(".regularitem");
       const results = [];
       items.forEach((item) => {
         results.push({
           title: item.querySelector(
-            ".title"
+            ".itemtitle"
           ).innerText,
           desc: item.querySelector(
-            "a"
+            ".itemcontent"
           ).innerText,
           
          
