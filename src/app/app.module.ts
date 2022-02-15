@@ -22,10 +22,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatCardModule } from '@angular/material/card';
-import { AuthenticatorComponent } from './tools/authenticator/authenticator.component';
-import { FirebaseTSApp } from 'firebasets/firebasetsApp/firebaseTSApp';
-import { environment } from 'src/environments/environment';
-import { EmailVerificationComponent } from './tools/email-verification/email-verification.component';
 
 
 
@@ -44,8 +40,7 @@ import { EmailVerificationComponent } from './tools/email-verification/email-ver
     WashingtonPostComponent,
     FooterComponent,
     AboutComponent,
-    AuthenticatorComponent,
-    EmailVerificationComponent,
+    
     
       
   ],
@@ -69,6 +64,6 @@ import { EmailVerificationComponent } from './tools/email-verification/email-ver
 })
 export class AppModule {
   constructor() {
-    FirebaseTSApp.init(environment.firebase);
+    
   }
 }
