@@ -15,15 +15,13 @@ const getAbc = require("./scrapers/abcScraper");
 const getCnn = require("./scrapers/cnnScraper");
 const res = require("express/lib/response");
 //npm run server outside of scraper folder in the main flder
+app.use(cors());
 
+// app.use(express.static(path.join(__dirname, "html")));
 
-
-app.use(express.static(__dirname + '/dist/aggregator'));
-app.get('/*', function(req,res) {
-res.sendFile(path.join(__dirname+
-'/dist/aggregator/index.html'));});
-
-
+app.get("/", async (req, res) => {
+  res.json("This is my webscraper");
+});
 //send get request to url/scrape
 app.get("/nbc", async (req, res) => {
   let results = await getNbc("https://www.nbcnews.com/politics");
